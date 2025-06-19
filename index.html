@@ -12,23 +12,90 @@
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    @font-face {
+      font-family: Inter;
+      src: url('assets/fonts/Inter-VariableFont_slnt\,wght.ttf');
+    }
+    body {
+      background-color: hsl(0, 0%, 8%);
+      display: flex;
+      min-height: 100dvh;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: Inter, sans-serif;
+    }
+    #card {
+      max-width: 327px;
+      max-height: 522px;
+      min-width: 300px;
+      min-height: 501px;
+      background-color: hsl(0, 0%, 12%);
+      border-radius: 10px;
+      text-align: center;
+    }
+    h1 {
+      color: hsl(0, 0%, 100%);
+      font-family: Inter, sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 0px;
+    }
+    #location {
+      margin-top: 5px;
+      margin-bottom: 22px;
+      color: hsl(75, 94%, 57%);
+      font-size: 12px;
+      font-weight: 600;
+    }
+    #description {
+      color: hsl(0, 0%, 100%);
+      font-size: 12px;
+      font-weight: 400;
+    }
+    .button {
+      font-weight: 600;
+      width: 255px;
+      height: 40px;
+      border: 0;
+      border-radius: 7px;
+      color: hsl(0, 0%, 100%);
+      background-color: hsl(0, 0%, 20%);
+      font-size: 14px;
+      margin: 6px;
+      cursor: pointer;
+    }
+    .button:active {
+      background-color: hsl(75, 94%, 57%);
+      color: hsl(0, 0%, 12%);
+    }
+    .button:hover {
+      border: 3px solid hsl(0, 0%, 100%);
+    }
+    .button:focus {
+      border: 3px solid hsl(0, 0%, 100%);
+    }
+    
   </style>
 </head>
 <body>
+  <main id="card">
+    <img src="assets/images/avatar-jessica.jpeg" alt="photo of Jessica" style="border-radius: 50%; width: 70px; height: 70px; margin-top: 30px;">
+    <h1>Jessica Randall</h1> 
+    <p id="location">London, United Kingdom</p> 
+    <p id="description">"Front-end developer and avid reader."</p> 
 
-  Jessica Randall
-  London, United Kingdom
-  "Front-end developer and avid reader."
-
-  GitHub
-  Frontend Mentor
-  LinkedIn
-  Twitter
-  Instagram
+    <a href="#" ><input type="button" value="GitHub" class="button"> </a>
+    <a href="#" ><input class="button" value="Fronted Mentor" type="button"></a>
+    <a href="#" ><input type="button" value="LinkedIn" class="button"></a>
+    <a href="#" ><input type="button" value="Twitter" class="button"></a>
+    <a href="#" ><input type="button" value="Instagram" class="button"></a>
+    
+  </main>
   
-  <div class="attribution">
+  <div class="attribution" style="color: white;">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/gyro2006">Jairo Delgado</a>.
   </div>
 </body>
 </html>
